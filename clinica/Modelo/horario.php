@@ -1,6 +1,6 @@
 <?php
     
-    class Horarios{
+    class Horario{
         private $id;
         private $descripcion;
         private $orden;
@@ -9,7 +9,7 @@
         public function __construct(){
             $this->setId(0);
             $this->setDescripcion("");
-            $this->setOrder(0);
+            $this->setOrden(0);
         }
 
  

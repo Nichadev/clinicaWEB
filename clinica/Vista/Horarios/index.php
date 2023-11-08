@@ -28,13 +28,13 @@
 
                 require_once "../../Conexion/Conexion.php";
                 require_once "../../Controlador/cont_horario.php";
-                require_once  "../../Modelo/mod_horario.php";
+                require_once  "../../Modelo/horario.php";
 
 
                 $obt_horario = new Horarios(); //instancia de controlador/cont_horario.php
 
-                if($obt_horario -> abrirConexion()) {
-                    $rs = $obt_horario -> listar("select * from horarios order by orden asc");
+                if($obt_horario->abrirConexion()) {
+                    $rs = $obt_horario->listar("select * from horarios order by orden asc");
 
                     foreach($rs as $key => $value){
                         echo "<tr>";
